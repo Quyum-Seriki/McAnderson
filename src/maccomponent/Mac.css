@@ -8,6 +8,9 @@ div.header{
     width: 70%;
     align-items: center;
 }
+div.hamburger{
+    display: none;
+}
 div.hide{
     display: none;
 }
@@ -42,9 +45,9 @@ section.sect1{
 div.sect1-col1 h1{
     width: 53%;
     font-size: 52px;
-    height: 208px;
     color: #fff;
     font-family:SF Pro Display;
+    padding: 10px 0 ;
 }
 div.sect1-col1 p{
     width: 52%;
@@ -99,6 +102,11 @@ section.sect3 p{
     line-height: 22px;
     font-size: 16px;
 }
+div.sect3-p p{
+    margin: 0 auto;
+    width: 45%;
+    padding: 20px 0;
+}
 section.sect3 h1{
     color: #4F4D55;
     font-weight: 600;
@@ -107,13 +115,13 @@ section.sect3 h1{
 div.sect3-row2{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 10px;
+    grid-column-gap: 30px;
     grid-row-gap: 50px;
-    margin: 0 auto;
-    width: 80%;
+    margin: 5% auto;
+    width: 70%;
 }
 div.sect3-row2 div{
-    width: 80%;
+    width: 100%;
     height: 30vh;
     border-radius: 10px;
     display: flex;
@@ -127,6 +135,7 @@ div.sect3-row2 div p{
 }
 div.sect3-row2 div p:first-of-type{
     border-top: 0.3px solid #ffffff33;
+    padding-top: 15px;
 }
 div.sect3-row2-col1{
     background-image: url('../images/code1.jpeg');
@@ -164,11 +173,13 @@ section.sect4{
     padding: 5em 0;
 }
 div.sect4-col1 h1{
-    margin-left: 15%;
+    text-align: center;
 }
 div.sect4-col1 p{
     text-align: center;
     font-size: 16px;
+    margin: 0 auto;
+    width: 37%;
     /* width: 100%; */
 }
 div.sect4-col2{
@@ -218,11 +229,11 @@ div.sect5-col2{
     width: 50%;
 }
 div.sect5-col2-1{
-    border: 1px solid #000;
+    box-shadow: -1px -1px 4px 4px #bdbcbc3b;
     width: 100%;
-    padding: 20px 15px;
+    padding: 15px 15px;
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 35px 0;
 }
 div.sect5-col2 h3{
     font-size: 20px;
@@ -239,6 +250,7 @@ div.drop{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    align-items: center;
 }
 div.drop1,div.drop2,div.drop3,div.drop4,div.drop5,div.drop6{
     display: block !important;
@@ -248,14 +260,32 @@ div.drops h3{
     color: #078586;
     cursor: pointer;
 }
+div.section5-col3{
+    background-color: #F7F7F4;
+    padding: 20px 10px;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+}
+div.section5-col3 h2{
+    padding: 10px 0;
+    font-weight: 600;
+}
+div.section5-col3 button{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    background-color: #089FA0;
+    color: #fff;
+}
 footer{
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: #078586;
-    
 }
 div.footer-col1{
     text-align: center;
-    padding: 10% 0;
+    padding: 6% 0;
 }
 div.footer-col1 img{
     width: 15em;
@@ -280,26 +310,45 @@ div.footer-col1 i{
     padding: 0 15px;
 }
 
-/* @media(max-width:750px){
+@media(max-width:768px){
     div.header{
         display: grid;
        grid-template-columns: auto auto;
         width: 90%;
     }
+    div.hamburger{
+        display: block;
+    }
+    div.hamburger i{
+        cursor: pointer;
+        font-size: 25px;
+    }
     div.hide{
         display: block;
         top: 0;
         right: 0;
-        background-color: #0000009c;
+        background-color: #fffffff1;
         height: 100vh;
         position: fixed;
-        width: 70%;
+        width: 100%;
+    }
+    div.hide-1{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+        padding: 20px 0 0 0;
+    }
+
+    div.hide i{
+        font-size: 30px;
+        cursor: pointer;
+        color: #000;
     }
     div.hide a{
-        color: #fff !important;
+        color: #000 !important;
         display: block;
         padding: 15px 0;
-        margin-left: 10%;
     }
     div.show{
     display: none;
@@ -310,9 +359,8 @@ div.footer-col1 i{
         background-position-y: 0;
     }   
     div.sect1-col1 h1{
-        width: 80%;
-        font-size: 35px;
-        height: auto;
+        width: 90%;
+        font-size: 30px;
     }
     div.sect1-col1 p{
         width: 90%;
@@ -335,40 +383,47 @@ div.footer-col1 i{
         font-weight: 600;
         font-size: 36px;
     }
-    div.sect3-row2{
-        grid-template-columns: auto auto;
-        grid-column-gap: 30px;
+    div.sect3-p p{
         width: 90%;
+        /* padding: 20px 0; */
+    }
+    div.sect3-row2{
+        grid-template-columns: auto;
+        grid-column-gap: 30px;
+        width: 80%;
     }
     div.sect3-row2 div{
         width: 100%;
     }
     div.sect4-col1 h1{
-        margin-left: 0;
+        margin: 0 auto;
         text-align: center;
+        width: 90%;
+        padding: 10px 0;
     }
     div.sect4-col1 p{
         text-align: center;
         font-size: 16px;
-        /* width: 100%; 
+         width: 85%; 
     }
     div.sect4-col2{
         grid-template-columns: auto;
         width: 88%;
+        text-align: center;
     }
     section.sect4 img{
         width: 20em;
     }
- 
     section.sect5{
         padding: 3% 0;
     }
     div.sect5-col1 h1{
         font-size: 35px;
+        padding: 15px 0;
     }
     div.sect5-col1 p{
         margin: 0 auto;
-        width: 15%;
+        width: 20%;
     }
     div.sect5-col2{
         width: 90%;
@@ -376,13 +431,16 @@ div.footer-col1 i{
     div.sect5-col2 h3{
         font-size: 18px;
     }
-    div.footer-col2{
+    div.section5-col3{
         width: 90%;
-        padding: 30px 0;
-        margin: 0;
     }
-    div.footer-col2 div{
-        grid-template-columns: auto;
+    div.footer-col2{
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
     }
-
-} */
+    div.footer-col2 div:last-of-type{
+        grid-column-gap: 0px;
+    }
+}

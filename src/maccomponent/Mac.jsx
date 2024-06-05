@@ -73,14 +73,15 @@ const Mac = () => {
         <div>
           <p>Why Join Our Waitlist?</p>
           <h1>Get Ready to Revolutionize Your Learning Journey!</h1>
+          <div className="sect3-p">
           <p>
             Explore our curated selection of featured courses and programs
             designed to ignite your passion for learning and propel you
-            <br />
             towards success. From cutting-edge technology to timeless artistry,
-            we have something for every learner. Dive in and discover <br />{" "}
+            we have something for every learner. Dive in and discover 
             your next big breakthrough today!
           </p>
+          </div>
         </div>
         <div className="sect3-row2">
           <div className="sect3-row2-col1">
@@ -240,6 +241,11 @@ const Mac = () => {
             <h3>Learn More <i class="fa-solid fa-arrow-right"></i></h3>
             </div>
           </div>
+        </div>
+        <div className="section5-col3">
+          <h2>Still have question?</h2>
+          <p>If you couldn’t see your question, get in contact with us now to get your answer</p>
+          <button>Contact us</button>
         </div>
       </section>
     </body>

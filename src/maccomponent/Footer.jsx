@@ -16,7 +16,9 @@ const Footer = () => {
         </div>
         </div>
         <div className='footer-col2'>
+          <div>
             <p>© 2024 McAderson - All rights reserved</p>
+            </div>
             <div>
             <p>Terms & Conditions</p>
             <p>Cookies</p>
