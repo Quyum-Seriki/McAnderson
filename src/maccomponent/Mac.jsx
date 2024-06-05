@@ -140,7 +140,7 @@ const Mac = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="divimg"> 
             <img src={img7} alt="" />
           </div>
           <div className="sect4-col2-1">

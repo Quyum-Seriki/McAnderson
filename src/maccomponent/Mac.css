@@ -414,6 +414,9 @@ div.footer-col1 i{
     section.sect4 img{
         width: 20em;
     }
+    div.divimg{
+        text-align: center;
+    }
     section.sect5{
         padding: 3% 0;
     }
@@ -443,4 +446,141 @@ div.footer-col1 i{
     div.footer-col2 div:last-of-type{
         grid-column-gap: 0px;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1000px){
+    div.header{
+        display: grid;
+       grid-template-columns: auto auto;
+        width: 90%;
+    }
+    div.hamburger{
+        display: block;
+    }
+    div.hamburger i{
+        cursor: pointer;
+        font-size: 35px;
+    }
+    div.hide{
+        display: block;
+        top: 0;
+        right: 0;
+        background-color: #fffffff1;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+    }
+    div.hide-1{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+        padding: 20px 0 0 0;
+    }
+
+    div.hide i{
+        font-size: 30px;
+        cursor: pointer;
+        color: #000;
+    }
+    div.hide a{
+        color: #000 !important;
+        display: block;
+        padding: 15px 0;
+    }
+    div.show{
+    display: none;
+  }
+    section.sect1{
+        grid-template-columns: auto;
+        background-position-x: -6.5em;
+        background-position-y: 0;
+    }   
+    div.sect1-col1 h1{
+        width: 90%;
+        font-size: 30px;
+    }
+    div.sect1-col1 p{
+        width: 90%;
+    }
+     section.sect2 img{
+        width: 9em;
+        margin: 20px 30px;
+    }
+     section.sect3{
+        text-align: center;
+        padding: 6em 0;
+    }
+    section.sect3 p{
+        color: #4F4D55;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    section.sect3 h1{
+        color: #4F4D55;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    div.sect3-p p{
+        width: 90%;
+    }
+    div.sect3-row2{
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+        width: 90%;
+    }
+    div.sect3-row2 div{
+        width: 100%;
+    }
+     div.sect4-col1 h1{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        padding: 10px 0;
+    }
+    div.sect4-col1 p{
+        text-align: center;
+        font-size: 16px;
+         width: 70%; 
+    }
+    div.sect4-col2{
+        grid-template-columns: auto;
+        width: 78%;
+        /* text-align: center; */
+    }
+    section.sect4 img{
+        width: 25em;
+    }
+    div.divimg{
+        text-align: center;
+    }
+    section.sect5{
+        padding: 3% 0;
+    }
+    div.sect5-col1 h1{
+        font-size: 35px;
+        padding: 15px 0;
+    }
+    div.sect5-col1 p{
+        margin: 0 auto;
+        width: 20%;
+    }
+    div.sect5-col2{
+        width: 90%;
+    }
+    div.sect5-col2 h3{
+        font-size: 18px;
+    }
+    div.section5-col3{
+        width: 90%;
+    }
+    /* div.footer-col2{
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+    }
+    div.footer-col2 div:last-of-type{
+        grid-column-gap: 0px;
+    } */
 }
